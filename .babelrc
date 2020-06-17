@@ -1,0 +1,13 @@
+{
+  "presets": ["@babel/react", "@babel/preset-typescript"],
+  "plugins": [
+    ["babel-plugin-add-import-extension", { "extension": "tsx" }],
+    [
+      "./babel-plugins/babel-plugin-import-to-relative",
+      {
+        "prefix": "/@modules/",
+        "suffix": ".js"
+      }
+    ]
+  ]
+}
